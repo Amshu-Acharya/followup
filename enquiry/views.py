@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, TemplateView
 
 from enquiry.models import Course
 
@@ -16,3 +16,6 @@ class CourseDetailView(DetailView):
     template_name = 'course_detail.html'
     model = Course
     context_object_name = 'course'
+
+class ContactView(TemplateView):
+    template_name= 'contact.html'
