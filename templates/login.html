@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Login/ Register</title>
+</head>
+<body>
+<div class="container">
+    <div class="c1">
+
+        <div class="c11">
+        </div>
+        <div id="left"><h1 class="s1class"><span>SIGN</span><span class="su">UP</span>
+        </h1></div>
+        <div id="right"><h1 class="s2class"><span>SIGN</span><span class="su">IN</span></h1></div>
+    </div>
+    <div class="c2">
+        <form class="signup" method="post">
+            {% csrf_token %}
+            <h1 class="signup1">SIGN IN</h1>
+            {{ form.as_p }}
+            <button class="btn" type="submit">Get Started</button>
+        </form>
+        <form class="signin" method="post" action="{% url 'user:register' %}">
+            {% csrf_token %}
+            <h1 class="signup1">SIGN UP</h1>
+            {{ registration_form.as_p }}
+            <button class="btn">Sign Up</button>
+        </form>
+    </div>
+</div>
+</body>
+
+<style>
+    .errorlist > li {
+        color: rgb(238, 155, 163);
+    }
+
+    body {
+        background: #FAF3EC;
+        font-family: 'Roboto';
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #748194;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: #748194;
+    }
+
+    :-ms-input-placeholder { /* IE 10+ */
+        color: #748194;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: #748194;
+    }
+
+    .container {
+        display: none;
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: calc(50% - 240px);
+        left: calc(40% - 160px);
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .c1 {
+        box-shadow: 0 0 10px grey;
+        background-color: white;
+        width: 300px;
+        height: 500px;
+        display: inline-block;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .c11 {
+        background-image: url('{% static "img/cards.jpg" %}');
+        background-size: 300px 400px;
+        background-repeat: no-repeat;
+        background-color: white;
+        width: 300px;
+        height: 400px;
+        display: inline-block;
+        position: absolute;
+        z-index: 4;
+        border-radius: 15px 15px 200px 200px;
+    }
+
+    #left, #right {
+        color: white;
+        display: inline-block;
+        width: 146px;
+        height: 500px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #left {
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    #right {
+        border-radius: 15px 15px 15px 0px;
+    }
+
+    .left_hover {
+        color: #EE9BA3;
+        box-shadow: 5px 0 18px -10px #333;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .right_hover {
+        box-shadow: -5px 0 15px -10px #333;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .s1class {
+        color: #748194;
+        position: absolute;
+        bottom: 0;
+        left: 63%;
+        margin-left: -50%;
+    }
+
+    .s1class span, .s2class span {
+        display: block;
+    }
+
+    .su {
+        font-size: 20px;
+    }
+
+    .s2class {
+        color: #748194;
+        position: absolute;
+        bottom: 0;
+        right: 63%;
+        margin-right: -50%;
+    }
+
+    .mainhead {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .mainp {
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .c2 {
+        background-color: white;
+        width: 300px;
+        height: 500px;
+        border-radius: 15px;
+        position: absolute;
+        left: 370px;
+        display: inline-block;
+    }
+
+    .username {
+        font-weight: bold;
+        width: 200px;
+        margin: 0 35px 20px;
+        height: 35px;
+        padding: 6px 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background: #F6F7F9;
+        color: #748194;
+        font-size: 14px;
+    }
+
+    .btn {
+        font-weight: bold;
+        width: 230px;
+        margin: 0 35px 20px;
+        height: 45px;
+        padding: 6px 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background: #EE9BA3;
+        color: white;
+        font-size: 14px;
+    }
+
+    .signup1 {
+        color: #748194;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .signup2 {
+        color: #748194;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .signup {
+        display: initial;
+    }
+
+    .signin {
+        display: initial;
+    }
+</style>
+
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script>
+  $(document).ready(function () {
+    $(".container").fadeIn(1000);
+    $(".s2class").css({"color": "#EE9BA3"});
+    $(".s1class").css({"color": "#748194"});
+    $("#left").removeClass("left_hover");
+    $("#right").addClass("right_hover");
+    $(".signin").css({"display": "none"});
+    $(".signup").css({"display": ""});
+  });
+  $("#right").click(function () {
+    $("#left").removeClass("left_hover");
+    $(".s2class").css({"color": "#EE9BA3"});
+    $(".s1class").css({"color": "#748194"});
+    $("#right").addClass("right_hover");
+    $(".signin").css({"display": "none"});
+    $(".signup").css({"display": ""});
+  });
+  $("#left").click(function () {
+    $(".s1class").css({"color": "#EE9BA3"});
+    $(".s2class").css({"color": "#748194"});
+    $("#right").removeClass("right_hover");
+    $("#left").addClass("left_hover");
+    $(".signup").css({"display": "none"});
+    $(".signin").css({"display": ""});
+  });
+</script>
+</html>

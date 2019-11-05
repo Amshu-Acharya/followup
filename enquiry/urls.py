@@ -7,10 +7,5 @@ app_name = 'enquiry'
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('course/<slug:slug>/', CourseDetailView.as_view(), name='course_detail'),
-    path('contact',ContactView.as_view(),name='contact')
-
-
-
+    path('contact', ContactView.as_view(),name='contact')
 ]
-
-# path ma k kaha ayo bhane k load garney khali ayo bhane index aune bhayo

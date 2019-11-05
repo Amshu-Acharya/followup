@@ -61,7 +61,17 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="{% url 'enquiry:contact' %}">Contact</a></li>
-                <li><a class="small" id="loginRegister">Login/Register</a></li>
+                {% if request.user.is_authenticated %}
+                    <li>
+                        <a class="small" id="loginRegister" href="{% url 'user:login_register' %}">
+                            Logout
+                        </a>
+                    </li>
+                {% else %}
+                    <li><a class="small" id="loginRegister" href="{% url 'user:login_register' %}">
+                        Login/Register
+                    </a></li>
+                {% endif %}
             </ul>
         </nav>
         <!-- /Navigation -->

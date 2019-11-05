@@ -23,9 +23,6 @@ urlpatterns = [
 ]
 
 
-# khali ayo bhane enquiry app ko url ma url pattern haru cha ho tyo load gar bhaneko it means tyo ayo bhane tyo filema  janey bhaneko
-
-
 from django.conf import settings
 from django.conf.urls.static import static
 
