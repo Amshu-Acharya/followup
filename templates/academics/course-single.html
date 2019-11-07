@@ -1,0 +1,62 @@
+{% extends 'academics/base.html' %}
+{% block content %}
+    {% load staticfiles %}
+    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4"
+         style="background-image: url('{% static "academics/images/bg_1.jpg" %}')">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <h2 class="mb-0">{{ course.title }}</h2>
+                    <p>{{ course.excerpt }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-breadcrumns border-bottom">
+        <div class="container">
+            <a href="{% url 'enquiry:index' %}">Home</a>
+            <span class="mx-3 icon-keyboard_arrow_right"></span>
+            <a href="courses.html">Courses</a>
+            <span class="mx-3 icon-keyboard_arrow_right"></span>
+            <span class="current">{{ course.title }}</span>
+        </div>
+    </div>
+
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <p>
+                        <img src="{{ course.image.url }}" alt="Image" class="img-fluid">
+                    </p>
+                    <p class="text-center">
+                        <a href="#" class="btn btn-primary rounded-0 btn-lg px-5 text-center" style="width: 100%">
+                            Enroll For This Course
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-5 ml-auto align-self-center">
+                    <div class="mb-5">
+                        <h4 class="section-title-underline mb-3s">
+                            <span>Shifts</span>
+                        </h4>
+                        <div>
+                            <span class="text-black font-weight-bold">Morning: </span>
+                            <span class="mx-2">8:00 am &mdash; 9:30am</span>
+                            <span class="text-warning">( 4 Seats Remaining )</span>
+                        </div>
+                    </div>
+                    <h2 class="section-title-underline mb-5">
+                        <span>Course Details</span>
+                    </h2>
+                    <div>
+                        {{ course.extra_information | safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'snippets/philoshophy.html' %}
+{% endblock %}

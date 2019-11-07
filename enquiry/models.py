@@ -1,9 +1,12 @@
 from django.utils.text import slugify
 
 from user.models import CustomUser
+from ckeditor.fields import RichTextField
+
 
 from django.contrib.auth.models import User
 from django.db import models
+
 
 def generate_unique_slug(klass, field):
     """
@@ -22,7 +25,6 @@ def generate_unique_slug(klass, field):
     return unique_slug
 
 
-
 class Shift(models.Model):
     name = models.CharField(max_length=255)
     start_time = models.TimeField()
@@ -34,15 +36,16 @@ class Shift(models.Model):
 
 class Course(models.Model):
     title = models.CharField(max_length=254)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True, null=True, blank=True)
     cost = models.PositiveIntegerField()
-    duration = models.DurationField()
-    syllabus = models.TextField()
-    shifts = models.ManyToManyField(Shift, related_name='courses')
+    duration = models.CharField(max_length=50, blank=True)
+    extra_information = RichTextField()
+    shifts = models.ManyToManyField(Shift, through='CourseShift')
     image = models.ImageField(upload_to='course')
     created_at = models.DateTimeField(auto_now_add=True)
+    excerpt = models.CharField(max_length=255)
 
-    def __str__(self): # String Representation of instance
+    def __str__(self):
         return self.title
 
     def save(self, *args, **kwargs):
@@ -52,6 +55,23 @@ class Course(models.Model):
         else:  # create
             self.slug = generate_unique_slug(Course, self.title)
         super().save(*args, **kwargs)
+
+
+class CourseShift(models.Model):
+    shift = models.ForeignKey(Shift, on_delete=models.CASCADE, related_name='course_shifts')
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='course_shifts')
+    seats = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return '{} - {}'.format(self.shift, self.course)
+
+    @property
+    def remaining_seats(self):
+        return self.seats - self.students.count()
+
+    @property
+    def has_remaining_seats(self):
+        return self.seats > self.students.count()
 
 
 class Student(models.Model):
@@ -71,3 +91,13 @@ class Enquiry(models.Model):
     def __str__(self):
         return self.user.get_username()
 
+
+class StudentEnrollment(models.Model):
+    course = models.ForeignKey(CourseShift, related_name='students', on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, related_name='enrolled_courses', on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    verified = models.BooleanField(default=False)
+
+    def __str__(self):
+        return '{}\'s  {}'.format(self.user.get_username(), self.course)

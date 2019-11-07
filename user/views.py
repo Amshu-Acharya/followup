@@ -30,10 +30,10 @@ class CustomAuthenticationForm(AuthenticationForm):
         super().__init__(*args, **kwargs)
         self.fields['username'].label = ''
         self.fields['password'].label = ''
-        self.fields['username'].widget.attrs['class'] = 'username'
-        self.fields['password'].widget.attrs['class'] = 'username'
-        self.fields['username'].widget.attrs['placeholder'] = 'username**'
-        self.fields['password'].widget.attrs['placeholder'] = 'password**'
+        self.fields['username'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['password'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['username'].widget.attrs['placeholder'] = 'username'
+        self.fields['password'].widget.attrs['placeholder'] = 'password'
 
 
 class CustomUserCreationForm(UserCreationForm):
@@ -46,29 +46,25 @@ class CustomUserCreationForm(UserCreationForm):
         self.fields['username'].help_text = ''
         self.fields['password1'].help_text = ''
         self.fields['password2'].help_text = ''
-        self.fields['username'].widget.attrs['class'] = 'username'
-        self.fields['password1'].widget.attrs['class'] = 'username'
-        self.fields['password2'].widget.attrs['class'] = 'username'
-        self.fields['username'].widget.attrs['placeholder'] = 'username**'
-        self.fields['password1'].widget.attrs['placeholder'] = 'password1**'
-        self.fields['password2'].widget.attrs['placeholder'] = 'password2**'
+        self.fields['username'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['password1'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['password2'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['username'].widget.attrs['placeholder'] = 'username'
+        self.fields['password1'].widget.attrs['placeholder'] = 'password1'
+        self.fields['password2'].widget.attrs['placeholder'] = 'password2'
 
     class Meta(UserCreationForm.Meta):
         model = get_user_model()
 
 
 class UserLoginView(LoginView):
-    template_name = 'login.html'
+    template_name = 'academics/login.html'
     form_class = CustomAuthenticationForm
 
-    def get_context_data(self, **kwargs):
-        ctx = super().get_context_data(**kwargs)
-        ctx['registration_form'] = CustomUserCreationForm()
-        return ctx
 
-
-class UserRegisterView(FormView):
+class UserRegisterView(TemplateView, FormView):
     form_class = CustomUserCreationForm
+    template_name = 'academics/register.html'
 
     def form_valid(self, form):
         form.save()
