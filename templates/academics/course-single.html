@@ -41,11 +41,17 @@
                         <h4 class="section-title-underline mb-3s">
                             <span>Shifts</span>
                         </h4>
-                        <div>
-                            <span class="text-black font-weight-bold">Morning: </span>
-                            <span class="mx-2">8:00 am &mdash; 9:30am</span>
-                            <span class="text-warning">( 4 Seats Remaining )</span>
-                        </div>
+                        {% for course_shift in course.course_shifts.all %}
+                            <div>
+                                <span class="text-black font-weight-bold">{{ course_shift.shift }}: </span>
+                                <span class="mx-2">{{ course_shift.shift.start_time }} &mdash; {{ course_shift.shift.end_time }}</span>
+                                {% if course_shift.has_remaining_seats %}
+                                    <span class="text-success font-weight-bold">( {{ course_shift.remaining_seats }} Seats Remaining )</span>
+                                {% else %}
+                                    <span class="text-danger">( No Seats Available )</span>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
                     </div>
                     <h2 class="section-title-underline mb-5">
                         <span>Course Details</span>

@@ -2,189 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c9042d8-3d50-456c-bb8c-fadade3c78a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/aos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/bootstrap-datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/bootstrap/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/jquery.fancybox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/jquery.mb.YTPlayer.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/mediaelementplayer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/backup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/Flaticon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/_flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/font/flaticon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/flaticon/license/license.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/Read Me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/demo-files/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/demo-files/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/fonts/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/fonts/icomoon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/fonts/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/fonts/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/selection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/fonts/icomoon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/bg_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/blog_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/blog_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/blog_large_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/course_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/course_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/course_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/course_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/course_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/course_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/hero_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/person_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/person_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/person_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/images/person_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/aos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery.easing.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery.fancybox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery.mb.YTPlayer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery.stellar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/jquery.sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/mediaelement-and-player.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/js/typed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/_site-base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/_site-blocks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/_site-navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enquiry/static/academics/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/admissions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/course-single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/news-single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/academics/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/enquiry/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0002_auto_20190803_1346.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0003_auto_20190803_1509.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0004_auto_20190803_1600.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0005_auto_20190803_1613.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0006_course_created_at.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0007_course_slug.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/enquiry/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/followUp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/followUp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/course-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/course-single.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -306,7 +127,9 @@
       <workItem from="1572963681429" duration="3086000" />
       <workItem from="1572968050211" duration="1434000" />
       <workItem from="1573048583081" duration="6513000" />
-      <workItem from="1573134674507" duration="7627000" />
+      <workItem from="1573134674507" duration="7845000" />
+      <workItem from="1573227218329" duration="329000" />
+      <workItem from="1573267008528" duration="2671000" />
     </task>
     <task id="LOCAL-00001" summary="add login register feature">
       <created>1572968875128</created>
@@ -322,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573049186194</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add new template">
+      <created>1573143495545</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573143495545</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add login register feature" />
     <MESSAGE value="MBF" />
-    <option name="LAST_COMMIT_MESSAGE" value="MBF" />
+    <MESSAGE value="add new template" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new template" />
   </component>
 </project>

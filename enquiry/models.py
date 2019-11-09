@@ -67,11 +67,11 @@ class CourseShift(models.Model):
 
     @property
     def remaining_seats(self):
-        return self.seats - self.students.count()
+        return self.seats - self.students.filter(verified=True).count()
 
     @property
     def has_remaining_seats(self):
-        return self.seats > self.students.count()
+        return self.seats > self.students.filter(verified=True).count()
 
 
 class Student(models.Model):
