@@ -74,11 +74,20 @@ class CourseShift(models.Model):
         return self.seats > self.students.filter(verified=True).count()
 
 
+SLC, INTERMEDIATE, BACHELOR, MASTER = 'Slc', 'Intermediate', 'Bachelor', 'Master'
+
+EDUCATION_LEVEL_CHOICES = (
+    (SLC, SLC),
+    (INTERMEDIATE, INTERMEDIATE),
+    (BACHELOR, BACHELOR),
+    (MASTER, MASTER),
+)
+
+
 class Student(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    city = models.CharField(max_length=200)
-    latest_eduation = models.CharField(max_length=200)
-    preferred_eduation = models.CharField(max_length=200)
+    location = models.CharField(max_length=255, blank=True)
+    education_level = models.CharField(max_length=20, blank=True, choices=EDUCATION_LEVEL_CHOICES)
 
     def __str__(self):
         return self.user.get_username()
@@ -93,8 +102,8 @@ class Enquiry(models.Model):
 
 
 class StudentEnrollment(models.Model):
-    course = models.ForeignKey(CourseShift, related_name='students', on_delete=models.CASCADE)
-    user = models.ForeignKey(CustomUser, related_name='enrolled_courses', on_delete=models.CASCADE)
+    course_shift = models.ForeignKey(CourseShift, related_name='students', on_delete=models.CASCADE)
+    student = models.ForeignKey(Student, related_name='enrolled_courses', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     verified = models.BooleanField(default=False)

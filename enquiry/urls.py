@@ -1,11 +1,12 @@
 from django.urls import path
 
-from enquiry.views import IndexView, CourseDetailView, ContactView
+from enquiry.views import IndexView, CourseDetailView, ContactView, StudentEnrollmentView
 
 app_name = 'enquiry'
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('course/<slug:slug>/', CourseDetailView.as_view(), name='course_detail'),
-    path('contact', ContactView.as_view(),name='contact')
+    path('contact', ContactView.as_view(), name='contact'),
+    path('enroll', StudentEnrollmentView.as_view(), name='enroll'),
 ]

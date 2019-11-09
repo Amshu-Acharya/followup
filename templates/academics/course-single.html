@@ -30,11 +30,27 @@
                     <p>
                         <img src="{{ course.image.url }}" alt="Image" class="img-fluid">
                     </p>
+
                     <p class="text-center">
-                        <a href="#" class="btn btn-primary rounded-0 btn-lg px-5 text-center" style="width: 100%">
-                            Enroll For This Course
-                        </a>
+                        {% if request.user.is_authenticated %}
+                            <a href="#"
+                               class="btn btn-primary rounded-0 btn-lg px-5 text-center"
+                               style="width: 100%"
+                               data-toggle="modal"
+                               data-target="#exampleModalCenter"
+                            >
+                                Enroll For This Course
+                            </a>
+                        {% else %}
+                            <a href="#"
+                               class="btn btn-primary rounded-0 btn-lg px-5 text-center"
+                               style="width: 100%"
+                            >
+                                Enquire For This Course
+                            </a>
+                        {% endif %}
                     </p>
+
                 </div>
                 <div class="col-lg-5 ml-auto align-self-center">
                     <div class="mb-5">
@@ -65,4 +81,58 @@
     </div>
 
     {% include 'snippets/philoshophy.html' %}
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Enroll In Course:
+                        <span class="font-weight-bold">{{ course }}</span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post" action="{% url 'enquiry:enroll' %}">
+                    <div class="modal-body">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Preferred Shift</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="shift">
+                                {% for course_shift in course.course_shifts.all %}
+                                    <option value="{{ course_shift.id }}">{{ course_shift.shift }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    {% if not requser.user.student %}
+                        <div class="form-group">
+                            <label for="number">Contact Number</label>
+                            <input type="text" class="form-control" id="number" placeholder="number"
+                                   name="phone_number">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="location" name="location">
+                        </div>
+                        <div class="form-group">
+                            <label for="educationLevel">Education Level</label>
+                            <select class="form-control" id="educationLevel" name="education_level">
+                                <option value="Slc">Slc</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Bachelor">Bachelor</option>
+                                <option value="Master">Master</option>
+                            </select>
+                        </div>
+                    {% endif %}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Enroll</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
