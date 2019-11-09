@@ -95,6 +95,12 @@ class Student(models.Model):
 
 class Enquiry(models.Model):
     courses = models.ManyToManyField(Course, related_name='enquires')
+    first_name = models.CharField(max_length=255, blank=True)
+    last_name = models.CharField(max_length=255)
+    location = models.CharField(max_length=255, blank=True)
+    email = models.EmailField(max_length=100, blank=True)
+    phone_number = models.CharField(max_length=255, blank=True)
+    message = models.TextField(blank=True)
     enquiry_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

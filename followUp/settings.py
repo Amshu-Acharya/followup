@@ -25,9 +25,6 @@ SECRET_KEY = 'bwmllhjajmge74c7d0igi7qcg)rim$7r16bjjjv+rl8+7*sqem'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -138,3 +135,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+ALLOWED_HOSTS = ['*', ]

@@ -1,12 +1,13 @@
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import transaction
+from django.forms import ModelForm
 from django.shortcuts import redirect
 from django.urls import reverse
-from django.views.generic import ListView, DetailView, TemplateView
+from django.views.generic import ListView, DetailView, TemplateView, CreateView
 from django.views.generic.base import View
 
-from enquiry.models import Course, Student, StudentEnrollment
+from enquiry.models import Course, Student, StudentEnrollment, Enquiry
 
 
 class IndexView(ListView):
@@ -21,8 +22,48 @@ class CourseDetailView(DetailView):
     context_object_name = 'course'
 
 
-class ContactView(TemplateView):
+class EnquiryForm(ModelForm):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['first_name'].label = ''
+        self.fields['last_name'].label = ''
+        self.fields['email'].label = ''
+        self.fields['location'].label = ''
+        self.fields['phone_number'].label = ''
+        self.fields['message'].label = ''
+        self.fields['courses'].label = ''
+        self.fields['first_name'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['last_name'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['email'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['location'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['phone_number'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['message'].widget.attrs['class'] = 'form-control form-control-lg'
+        self.fields['courses'].widget.attrs['class'] = 'form-control form-control-lg'
+
+    class Meta:
+        model = Enquiry
+        fields = '__all__'
+
+
+class ContactView(CreateView):
     template_name = 'academics/contact.html'
+    model = Enquiry
+    form_class = EnquiryForm
+
+    def form_valid(self, form):
+        messages.success(self.request, 'Your Request is Noted.')
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Some error occurred.')
+        return super().form_invalid(form)
+
+
+class CourseListView(ListView):
+    template_name = 'academics/courses.html'
+    context_object_name = 'courses'
+    model = Course
 
 
 class StudentEnrollmentView(LoginRequiredMixin, View):

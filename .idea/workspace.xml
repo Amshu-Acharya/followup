@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c9042d8-3d50-456c-bb8c-fadade3c78a2" name="Default Changelist" comment="">
+    <list default="true" id="8c9042d8-3d50-456c-bb8c-fadade3c78a2" name="Default Changelist" comment="add seats availabilty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0002_auto_20191107_2141.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0003_auto_20191107_2143.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/0004_studentenrollment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/enquiry/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enquiry/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enquiry/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/course-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/course-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/followUp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/followUp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/admissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/admissions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/news-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/news-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/snippets/philoshophy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/snippets/philoshophy.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +28,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,6 +46,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/enquiry/static/academics" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -138,7 +142,8 @@
       <workItem from="1573048583081" duration="6513000" />
       <workItem from="1573134674507" duration="7845000" />
       <workItem from="1573227218329" duration="329000" />
-      <workItem from="1573267008528" duration="8483000" />
+      <workItem from="1573267008528" duration="9360000" />
+      <workItem from="1573299793054" duration="12470000" />
     </task>
     <task id="LOCAL-00001" summary="add login register feature">
       <created>1572968875128</created>
@@ -168,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573274643356</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add seats availabilty">
+      <created>1573281422847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573281422847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
