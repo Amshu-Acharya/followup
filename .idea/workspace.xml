@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c9042d8-3d50-456c-bb8c-fadade3c78a2" name="Default Changelist" comment="add seats availabilty">
+    <list default="true" id="8c9042d8-3d50-456c-bb8c-fadade3c78a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enquiry/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/enquiry/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/followUp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/followUp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/admissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/admissions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/academics/news-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/news-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/snippets/philoshophy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/snippets/philoshophy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/academics/course-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/academics/course-single.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +17,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -143,7 +132,8 @@
       <workItem from="1573134674507" duration="7845000" />
       <workItem from="1573227218329" duration="329000" />
       <workItem from="1573267008528" duration="9360000" />
-      <workItem from="1573299793054" duration="12470000" />
+      <workItem from="1573299793054" duration="12621000" />
+      <workItem from="1573366525037" duration="2197000" />
     </task>
     <task id="LOCAL-00001" summary="add login register feature">
       <created>1572968875128</created>
@@ -180,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573281422847</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updates">
+      <created>1573315574964</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573315574964</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +201,7 @@
     <MESSAGE value="MBF" />
     <MESSAGE value="add new template" />
     <MESSAGE value="add seats availabilty" />
-    <option name="LAST_COMMIT_MESSAGE" value="add seats availabilty" />
+    <MESSAGE value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
 </project>
